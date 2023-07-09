@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<truthTable>
+  <variables>
+    <variable name="j2"/>
+    <variable name="j1"/>
+    <variable name="j0"/>
+    <variable name="zr"/>
+    <variable name="ng"/>
+  </variables>
+  <results>
+    <result>
+      <name>JMP</name>
+      <values class="BoolTable">00000000000000000000000000000000</values>
+    </result>
+  </results>
+</truthTable>

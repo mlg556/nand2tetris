@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>mem.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Memory</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1160" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ROM32K</string>
+        </entry>
+        <entry>
+          <string>AddrBits</string>
+          <int>15</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1320" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes/>
+      <pos x="1300" y="380"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="1300" y="380"/>
+      <p2 x="1320" y="380"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
