@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>2</version>
-  <attributes/>
+  <attributes>
+    <entry>
+      <string>romContent</string>
+      <romList>
+        <roms/>
+      </romList>
+    </entry>
+  </attributes>
   <visualElements>
     <visualElement>
       <elementName>bit.dig</elementName>
@@ -114,7 +121,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>d</string>
+          <string>in</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -162,7 +169,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>l</string>
+          <string>load</string>
         </entry>
       </elementAttributes>
       <pos x="580" y="280"/>
@@ -198,7 +205,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>q</string>
+          <string>out</string>
         </entry>
         <entry>
           <string>Bits</string>
