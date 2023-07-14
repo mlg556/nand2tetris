@@ -774,8 +774,8 @@ J | inc | load
         </entry>
         <entry>
           <string>Description</string>
-          <string>ac = 0 =&gt; c-instr
-ac = 1 =&gt; a-instr</string>
+          <string>ac = 0 =&gt; a-instr
+ac = 1 =&gt; c-instr</string>
         </entry>
         <entry>
           <string>rotation</string>

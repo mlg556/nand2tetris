@@ -1,0 +1,59 @@
+A instruction:
+symbolic: @xx
+binary: 0vvvvvvv
+
+C instruction:
+symbolic: dest=comp;jump
+
+COMP
+for instructions like M=D etc..
+ALU should also be able to output D and A unchanged (also M, depending on the "a" bit which sets whether the second input of ALU should come from RegA or M )
+add/subtract is a must
+increments and decrements would also be nice?
+(for instructions like D=M+1)
+
+c1c0
+00 |D
+01 |A
+10 |D+A
+11| D-A
+
+again not sure about T.C.
+
+DEST
+we do need all the destinations, but not necessarily all at once?
+d1d0
+00 | null
+01 | M
+10 | D
+11 | A
+
+JUMP
+for turing completeness we need at least one conditional jump, idk about the rest. let's try:
+
+j1j0
+00 | no jump (so PC increments)
+01 | JUMP if 0 (ZR=1) 
+10 | JUMP if not 0 (ZR=0)
+11 | unconditional jump (like goto)
+
+idk if this is enough for TC tho.
+
+(thus)
+j1,j0,zr,,JMP
+0, 0, 0  ,,0
+0, 0, 1  ,,0
+0, 1, 0  ,,0
+0, 1, 1  ,,1
+1, 0, 0  ,,1
+1, 0, 1  ,,0
+1, 1, 0  ,,1
+1, 1, 1  ,,1
+
+
+altogether can we get away with:
+A-ins: 0xxxvvvv
+C-ins: 1accddjj
+
+wow exactly 8 bits. let's go
+
