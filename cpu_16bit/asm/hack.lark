@@ -1,0 +1,34 @@
+hack: (l_ins|a_ins|c_ins)
+
+
+l_ins: "(" WORD ")" // label
+a_ins: "@"(NUMBER|predef|variable)
+c_ins: (dest "=")? comp (";" jump)?
+
+variable: WORD
+
+dest: REG+ // at least one register, not necessarily in order, both DM and MD works
+comp: CONS | UNARY | BINARY_NUM | BINARY_REG
+jump: jgt|jeq|jge|jlt|jne|jle|jmp
+//jump: "JGT"|"JEQ"|"JGE"|"JLT"|"JNE"|"JLE"|"JMP"
+
+CONS: "0"|"1"|"-1" // alu's constant outputs
+UNARY: ("!"|"-")? REG // unary operation, invert negate or keep
+BINARY_NUM: REG ("+"|"-") "1" // binary op with 1, increment or decrement
+BINARY_REG: REG ("+"|"-"|"&"|"|") REG // binary op with another reg
+
+jgt: "JGT"
+jeq: "JEQ"
+jge: "JGE"
+jlt: "JLT"
+jne: "JNE"
+jle: "JLE"
+jmp: "JMP"
+
+
+REG: "M"|"D"|"A"
+predef: "R"NUMBER|"SP"|"LCL"|"ARG"|"THIS" // predefined symbols for hack todo: constrain NUMBER 0..15
+
+%import common.WORD
+%import common.NUMBER
+%ignore " "
