@@ -22,6 +22,14 @@
           <string>Data</string>
           <data>3,ec10,0,e308,4,ec10,1,e308,0,fc10,1,f090,2,e308</data>
         </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\mirac\Documents\fpga\nand2tetris\cpu_16bit\mult.hex</file>
+        </entry>
+        <entry>
+          <string>autoReload</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
       <pos x="800" y="300"/>
     </visualElement>
@@ -86,6 +94,98 @@
       </elementAttributes>
       <pos x="1300" y="300"/>
     </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>A</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1180" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>D</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1180" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>A</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1020" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="1200" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>D</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1020" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>D</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="1200" y="140"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -105,6 +205,10 @@
       <p2 x="1400" y="240"/>
     </wire>
     <wire>
+      <p1 x="1160" y="400"/>
+      <p2 x="1180" y="400"/>
+    </wire>
+    <wire>
       <p1 x="780" y="340"/>
       <p2 x="800" y="340"/>
     </wire>
@@ -122,7 +226,7 @@
     </wire>
     <wire>
       <p1 x="720" y="420"/>
-      <p2 x="1200" y="420"/>
+      <p2 x="1220" y="420"/>
     </wire>
     <wire>
       <p1 x="1020" y="360"/>
@@ -130,7 +234,7 @@
     </wire>
     <wire>
       <p1 x="1160" y="360"/>
-      <p2 x="1200" y="360"/>
+      <p2 x="1220" y="360"/>
     </wire>
     <wire>
       <p1 x="1240" y="360"/>
@@ -139,6 +243,10 @@
     <wire>
       <p1 x="960" y="360"/>
       <p2 x="1000" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="1020" y="140"/>
+      <p2 x="1200" y="140"/>
     </wire>
     <wire>
       <p1 x="720" y="300"/>
@@ -157,12 +265,20 @@
       <p2 x="1300" y="380"/>
     </wire>
     <wire>
-      <p1 x="1200" y="360"/>
-      <p2 x="1200" y="420"/>
+      <p1 x="1160" y="380"/>
+      <p2 x="1180" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="1020" y="60"/>
+      <p2 x="1200" y="60"/>
     </wire>
     <wire>
       <p1 x="720" y="300"/>
       <p2 x="720" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="1220" y="360"/>
+      <p2 x="1220" y="420"/>
     </wire>
     <wire>
       <p1 x="1000" y="240"/>

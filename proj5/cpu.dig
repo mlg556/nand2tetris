@@ -891,6 +891,50 @@ ac = 1 =&gt; c-instr</string>
       </elementAttributes>
       <pos x="1060" y="620"/>
     </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>RegA</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+      </elementAttributes>
+      <pos x="920" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>small</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>RegD</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1140" y="220"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -935,7 +979,7 @@ ac = 1 =&gt; c-instr</string>
     </wire>
     <wire>
       <p1 x="1120" y="200"/>
-      <p2 x="1220" y="200"/>
+      <p2 x="1140" y="200"/>
     </wire>
     <wire>
       <p1 x="1040" y="200"/>
@@ -944,6 +988,10 @@ ac = 1 =&gt; c-instr</string>
     <wire>
       <p1 x="1280" y="200"/>
       <p2 x="1300" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="1140" y="200"/>
+      <p2 x="1220" y="200"/>
     </wire>
     <wire>
       <p1 x="920" y="460"/>
@@ -1142,16 +1190,24 @@ ac = 1 =&gt; c-instr</string>
       <p2 x="660" y="180"/>
     </wire>
     <wire>
+      <p1 x="1140" y="200"/>
+      <p2 x="1140" y="220"/>
+    </wire>
+    <wire>
       <p1 x="440" y="280"/>
       <p2 x="440" y="320"/>
     </wire>
     <wire>
-      <p1 x="920" y="220"/>
-      <p2 x="920" y="380"/>
+      <p1 x="920" y="200"/>
+      <p2 x="920" y="220"/>
     </wire>
     <wire>
       <p1 x="920" y="460"/>
       <p2 x="920" y="680"/>
+    </wire>
+    <wire>
+      <p1 x="920" y="220"/>
+      <p2 x="920" y="380"/>
     </wire>
     <wire>
       <p1 x="920" y="380"/>
