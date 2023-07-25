@@ -3,12 +3,12 @@ module hack (
     input clk,
 
     output reg [14:0] PC,
-    output [15:0] OUT
+    output [15:0] SCREEN
 );
   reg [15:0] A;
   reg [15:0] D;
 
-  reg [15:0] RAM[16384:0];
+  reg [15:0] RAM[24576:0];
 
   reg signed [15:0] ALU;
 
@@ -32,18 +32,19 @@ module hack (
 
   wire [15:0] M = RAM[A];  // M "register"
 
+  assign SCREEN = RAM[16384];  // so R16 is "displayed"
+
+
   initial begin
     A  = 0;
     D  = 0;
     PC = 0;
 
-    //$monitor("A:%d | D:%d", A, D);
+    // $monitor("A:%d | D:%d", A, D);
 
-    #1 $display("R0   | R1   | R2");
-    $monitor("%h | %h | %h", RAM[0], RAM[1], RAM[2]);
+    //$monitor("%d", SCREEN);
   end
 
-  assign OUT = D;
 
   always @(posedge clk) begin
 

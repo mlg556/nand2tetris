@@ -3,23 +3,22 @@ module hack_tb;
   reg clk;
   reg [15:0] instr;
   wire [14:0] PC;
-  wire signed [15:0] OUT;
+  wire [15:0] SCREEN;
 
   // ROM
   reg [15:0] ROM[0:255];
 
   initial begin
-    $readmemh("mult.hex", ROM);
+    $readmemh("fib.hex", ROM);
     #2 clk = 0;
-    // $monitor(OUT);
+    $monitor("%d", SCREEN);
 
-    for (integer i = 0; i < 255; i++) begin
+    for (integer i = 0; i < 1000; i++) begin
       #1 clk = ~clk;
       instr = ROM[PC];
     end
 
     #2 $finish;
-    //$monitor("%b", instr);
 
   end
 
@@ -27,7 +26,7 @@ module hack_tb;
       instr,
       clk,
       PC,
-      OUT
+      SCREEN
   );
 
   initial begin

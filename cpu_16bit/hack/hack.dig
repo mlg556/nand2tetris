@@ -20,8 +20,8 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>3,ec10,0,e308,4,ec10,1,e308,10,efc8,11,ea88,10,fc10,1,f4d0,1c
-,e301,11,fc10,0,f090,11,e308,10,fdc8,c,ea87,11,fc10,1e,ea87</data>
+          <data>10,efc8,11,efc8,12,ea88,10,fc10,4000,e308,10,fc10,11,f090,12,e308
+,10,fc10,11,e308,12,fc10,10,e308,6,ea87</data>
         </entry>
       </elementAttributes>
       <pos x="840" y="320"/>
@@ -35,12 +35,20 @@
       <elementName>Clock</elementName>
       <elementAttributes>
         <entry>
+          <string>runRealTime</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
         </entry>
         <entry>
           <string>Label</string>
           <string>clk</string>
+        </entry>
+        <entry>
+          <string>Frequency</string>
+          <int>20</int>
         </entry>
       </elementAttributes>
       <pos x="940" y="420"/>
@@ -62,11 +70,11 @@
         </entry>
         <entry>
           <string>externalOutputs</string>
-          <string>PC:15,OUT:16</string>
+          <string>PC:15,SCREEN:16</string>
         </entry>
         <entry>
           <string>Width</string>
-          <int>5</int>
+          <int>6</int>
         </entry>
         <entry>
           <string>CodeFile</string>
@@ -93,6 +101,16 @@
       </elementAttributes>
       <pos x="1260" y="360"/>
     </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368</string>
+        </entry>
+      </elementAttributes>
+      <pos x="560" y="200"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -104,7 +122,7 @@
       <p2 x="1000" y="340"/>
     </wire>
     <wire>
-      <p1 x="1100" y="340"/>
+      <p1 x="1120" y="340"/>
       <p2 x="1140" y="340"/>
     </wire>
     <wire>
@@ -120,7 +138,7 @@
       <p2 x="1000" y="360"/>
     </wire>
     <wire>
-      <p1 x="1100" y="360"/>
+      <p1 x="1120" y="360"/>
       <p2 x="1260" y="360"/>
     </wire>
     <wire>
