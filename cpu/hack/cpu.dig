@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>2</version>
-  <attributes/>
+  <attributes>
+    <entry>
+      <string>romContent</string>
+      <romList>
+        <roms/>
+      </romList>
+    </entry>
+    <entry>
+      <string>Width</string>
+      <int>6</int>
+    </entry>
+  </attributes>
   <visualElements>
     <visualElement>
       <elementName>ROM</elementName>
@@ -34,10 +45,6 @@
     <visualElement>
       <elementName>Clock</elementName>
       <elementAttributes>
-        <entry>
-          <string>runRealTime</string>
-          <boolean>true</boolean>
-        </entry>
         <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
@@ -89,6 +96,10 @@
         <entry>
           <string>small</string>
           <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>SCREEN</string>
         </entry>
         <entry>
           <string>Bits</string>

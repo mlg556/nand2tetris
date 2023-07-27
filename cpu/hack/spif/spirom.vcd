@@ -1,0 +1,121 @@
+$date
+	Thu Jul 27 00:58:59 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module spirom_tb $end
+$var wire 1 ! sck $end
+$var wire 1 " mosi $end
+$var wire 1 # cs $end
+$var reg 1 $ clk $end
+$scope module u0 $end
+$var wire 1 $ clk $end
+$var parameter 32 % INIT $end
+$var parameter 32 & SEND_CMD $end
+$var parameter 32 ' WAIT $end
+$var reg 8 ( command [7:0] $end
+$var reg 1 # cs $end
+$var reg 1 " mosi $end
+$var reg 1 ! sck $end
+$var reg 5 ) state [4:0] $end
+$var integer 32 * wait_counter [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 '
+b1 &
+b0 %
+$end
+#0
+$dumpvars
+b0 *
+b0 )
+b11010010 (
+0$
+1#
+0"
+0!
+$end
+#2
+b1 *
+1$
+#4
+0$
+#6
+b10 *
+1$
+#8
+0$
+#10
+b11 *
+1$
+#12
+0$
+#14
+b100 *
+1$
+#16
+0$
+#18
+b1 )
+1$
+#20
+0$
+#22
+b10100100 (
+1"
+1!
+0#
+1$
+#24
+0$
+#26
+b1001000 (
+0!
+1$
+#28
+0$
+#30
+b10010000 (
+0"
+1!
+1$
+#32
+0$
+#34
+b100000 (
+1"
+0!
+1$
+#36
+0$
+#38
+b1000000 (
+0"
+1!
+1$
+#40
+0$
+#42
+b10000000 (
+0!
+1$
+#44
+0$
+#46
+b0 (
+1"
+1!
+1$
+#48
+0$
+#50
+0"
+0!
+1$
