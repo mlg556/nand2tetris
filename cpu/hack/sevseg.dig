@@ -46,7 +46,7 @@
         </entry>
         <entry>
           <string>CodeFile</string>
-          <file>C:\Users\mirac\Documents\fpga\nand2tetris\cpu\hack\sevseg.v</file>
+          <file>sevseg.v</file>
         </entry>
       </elementAttributes>
       <pos x="700" y="260"/>
@@ -149,7 +149,7 @@
         </entry>
         <entry>
           <string>CodeFile</string>
-          <file>C:\Users\mirac\Documents\fpga\nand2tetris\cpu\hack\bcd.v</file>
+          <file>bcd.v</file>
         </entry>
       </elementAttributes>
       <pos x="340" y="220"/>
@@ -158,12 +158,12 @@
       <elementName>Multiplexer</elementName>
       <elementAttributes>
         <entry>
-          <string>Bits</string>
-          <int>4</int>
-        </entry>
-        <entry>
           <string>Selector Bits</string>
           <int>2</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>4</int>
         </entry>
       </elementAttributes>
       <pos x="640" y="220"/>
@@ -186,16 +186,16 @@
           <boolean>true</boolean>
         </entry>
         <entry>
+          <string>runRealTime</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>clk</string>
         </entry>
         <entry>
           <string>Frequency</string>
           <int>120</int>
-        </entry>
-        <entry>
-          <string>runRealTime</string>
-          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="360" y="400"/>
@@ -219,16 +219,16 @@
       <elementName>Decoder</elementName>
       <elementAttributes>
         <entry>
-          <string>flipSelPos</string>
-          <boolean>true</boolean>
-        </entry>
-        <entry>
           <string>Selector Bits</string>
           <int>2</int>
         </entry>
         <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
+        </entry>
+        <entry>
+          <string>flipSelPos</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="1120" y="620"/>

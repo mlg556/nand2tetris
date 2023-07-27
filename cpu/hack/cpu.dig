@@ -85,7 +85,7 @@
         </entry>
         <entry>
           <string>CodeFile</string>
-          <file>C:\Users\mirac\Documents\fpga\nand2tetris\cpu_16bit\hack\hack.v</file>
+          <file>hack.v</file>
         </entry>
       </elementAttributes>
       <pos x="1000" y="340"/>
