@@ -1,3 +1,4 @@
 *.pdf
+*.vcd
 
 \cpu_16bit\asm\Hack-Assembler\
