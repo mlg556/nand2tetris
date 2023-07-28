@@ -244,31 +244,26 @@
       <pos x="860" y="260"/>
     </visualElement>
     <visualElement>
-      <elementName>cpu.dig</elementName>
-      <elementAttributes/>
-      <pos x="200" y="220"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Clock</elementName>
+      <elementName>In</elementName>
       <elementAttributes>
         <entry>
           <string>small</string>
           <boolean>true</boolean>
         </entry>
         <entry>
-          <string>runRealTime</string>
-          <boolean>true</boolean>
-        </entry>
-        <entry>
           <string>Label</string>
-          <string>clk</string>
+          <string>num</string>
         </entry>
         <entry>
-          <string>Frequency</string>
-          <int>20</int>
+          <string>Bits</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
         </entry>
       </elementAttributes>
-      <pos x="180" y="220"/>
+      <pos x="300" y="220"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -453,10 +448,6 @@
       <p2 x="1120" y="600"/>
     </wire>
     <wire>
-      <p1 x="180" y="220"/>
-      <p2 x="200" y="220"/>
-    </wire>
-    <wire>
       <p1 x="1060" y="220"/>
       <p2 x="1100" y="220"/>
     </wire>
@@ -465,7 +456,7 @@
       <p2 x="640" y="220"/>
     </wire>
     <wire>
-      <p1 x="320" y="220"/>
+      <p1 x="300" y="220"/>
       <p2 x="340" y="220"/>
     </wire>
     <wire>

@@ -1,7 +1,7 @@
 BOARD=tangnano9k
 FAMILY=GW1N-9C
 DEVICE=GW1NR-LV9QN88PC6/I5
-PROJECT=hack
+PROJECT=hack_fpga
 
 all: ${PROJECT}.fs
 

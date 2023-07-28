@@ -23,10 +23,10 @@ M=0
 
 
 (LOOP)
-// display a by putting it into SCREEN
+// display a by putting it into R15
 @a
 D=M
-@SCREEN
+@R15
 M=D
 
 // [calculate a+b]

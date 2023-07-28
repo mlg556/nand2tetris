@@ -33,7 +33,5 @@ module bcd (
 
   end
 
-
-
 endmodule
-;
+
