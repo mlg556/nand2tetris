@@ -3,7 +3,7 @@ FAMILY=GW1N-9C
 DEVICE=GW1NR-LV9QN88PC6/I5
 PROJECT=hack_fpga
 
-all: ${PROJECT}.fs
+all: ${PROJECT}.fs ${BOARD}.cst
 
 # Synthesis
 ${PROJECT}.json: ${PROJECT}.v
@@ -29,7 +29,7 @@ test: ${PROJECT}_test.o
 
 # Cleanup build artifacts, del for windows cmd.exe
 clean:
-	del ${PROJECT}.fs 
+	del ${PROJECT}.fs  ${PROJECT}_pnr.json ${PROJECT}.json ${PROJECT}_test.o
 
 .PHONY: load clean test
 # .INTERMEDIATE: ${PROJECT}_pnr.json ${PROJECT}.json ${PROJECT}_test.o
