@@ -60,7 +60,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>q</string>
+          <string>out</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -112,7 +112,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>d</string>
+          <string>data</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -182,7 +182,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>a</string>
+          <string>addr</string>
         </entry>
         <entry>
           <string>Bits</string>
